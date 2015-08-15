@@ -44,18 +44,21 @@
         {
             title: event.title,
             start: event.start_date,
-            description: event.description
+            end: event.end_date,
+            description: event.description,
+            url: 'localhost:3000/events'
         }
         // more events here
     ],
+
+
     eventRender: function(event, element) {
-        element.qtip({
-            content: event.description
-        });
+       
     }
 });
+}); 
 
-});    
+  
   
 
 
